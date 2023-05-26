@@ -1,0 +1,24 @@
+[8:14 pm, 25/05/2023] Hema Adc: #include<stdio.h>
+main()
+{
+	char s[100];
+	int i=0,spl,lwr,ch;
+	spl=lwr=0;
+	printf("enter the any string");
+	gets(s);
+	while(s[i++]!='\0')
+	{
+		ch=s[i];
+		if(ch>='a'&&ch<='z'){
+			lwr++;
+	}
+	else
+	{
+		spl++;
+	}
+		}
+		
+	printf("\n%d the lwr case",lwr);
+	printf("\n%d special character",spl);
+	
+}
